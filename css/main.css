@@ -23,6 +23,11 @@ a {
     color: rgb(48, 48, 48);
 }
 
+a:hover {
+    color: hsl(0, 85%, 45%);
+    font-weight: bold;
+}
+
 h1 {
     font-size: 20pt;
     font-weight: 600;
@@ -133,6 +138,8 @@ section {
     height: 200px;
     margin-bottom: 40px;
     text-decoration: none;
+    border: 2px solid transparent;
+
 }
 
 a > img {
@@ -155,6 +162,10 @@ a > img {
     .image-group > a {
         width: 30%;
     }
+        
+    .image-group > a:hover {
+        border: 2px solid hsl(0, 85%, 45%);
+        }
 
     a > h3 {
         text-align: left;
@@ -177,5 +188,6 @@ ul {
 
 ul > li {
     display: inline;
-    margin-inline-end: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
