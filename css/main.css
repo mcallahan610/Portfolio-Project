@@ -56,6 +56,10 @@ h3 {
     text-transform: uppercase;
 }
 
+p {
+    color: #4b4b4b;
+}
+
 li > a {
     text-decoration: none;
     font-size: 14pt;
@@ -117,7 +121,7 @@ hr {
 .hero-image {
     object-fit: none;
     width: 100%;
-    height:230px;
+    height: 230px;
 }
 
 /* Project Section */
@@ -160,7 +164,7 @@ a > img {
     }
 
     .image-group > a {
-        width: 30%;
+        width: 32%;
     }
         
     .image-group > a:hover {
