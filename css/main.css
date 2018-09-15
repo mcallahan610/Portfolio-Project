@@ -43,7 +43,7 @@ h2 {
     margin-top: 24px;
     letter-spacing: 2px;
     text-align: left;
-    color: #666666;
+    color: #666;
     text-transform: uppercase;
 }
 
@@ -124,7 +124,7 @@ hr {
     height: 230px;
 }
 
-/* Project Section */
+/* Project Gallery */
 
 section {
     padding-left: 16px;
