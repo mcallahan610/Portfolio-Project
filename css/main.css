@@ -19,6 +19,10 @@ h1, h2, h3, h4, p, a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    color: rgb(48, 48, 48);
+}
+
 h1 {
     font-size: 20pt;
     font-weight: 600;
@@ -41,7 +45,7 @@ h2 {
 h3 {
     font-size: 10pt;
     margin-top: 4px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-align: right;
     color: hsl(0, 85%, 45%);
     text-transform: uppercase;
@@ -121,13 +125,40 @@ section {
 
 .image-group {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.image-group > img {
-    object-fit: cover;
-    width: 30%;
+.image-group > a {
+    width: 100%;
     height: 200px;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+a > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 615px) {
+    .image-group > a {
+        margin-bottom: 52px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .image-group {
+        justify-content: space-between;
+    }
+
+    .image-group > a {
+        width: 30%;
+    }
+
+    a > h3 {
+        text-align: left;
+    }
 }
 
 /* Footer */
